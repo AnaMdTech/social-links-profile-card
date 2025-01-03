@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preload" href="/fonts/Inter-VariableFont_slnt,wght.ttf" as="font" type="font/ttf"
+    crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/Inter-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/Inter-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/Inter-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    @font-face {
+      font-family: 'Inter Variable';
+      src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url('../fonts/Inter-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url('../fonts/Inter-SemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url('../fonts/Inter-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .attribution a {
+      color: hsl(75, 94%, 57%);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .social-links-profile-container {
+      width: 260px;
+      background-color: hsl(0, 0%, 12%);
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .card {
+      text-align: center;
+    }
+
+    .profile-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-weight: 700;
+      font-size: 22px;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .location {
+      font-weight: 400;
+      font-size: 14px;
+      color: hsl(75, 94%, 57%);
+    }
+
+    .bio {
+      font-weight: 400;
+      font-size: 14px;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .link {
+      font-weight: 700;
+      font-size: 13px;
+      color: hsl(0, 0%, 100%);
+      text-decoration: none;
+      background-color: hsl(0, 0%, 20%);
+      border-radius: 5px;
+      padding: 13px 15px;
+      gap: 20px;
+    }
+
+    .link:hover {
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 8%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="social-links-profile-container">
+    <div class="card">
+      <img src="assets/images/avatar-jessica.jpeg" alt="profile-avatar" class="profile-avatar">
+      <div class="card-content">
+        <h1 class="name">Jessica Randall</h1>
+        <p class="location">London, United Kingdom</p>
+        <p class="bio">"Front-end developer and avid reader."</p>
+        <div class="links">
+          <a href="#" class="link">GitHub</a>
+          <a href="#" class="link">Frontend Mentor</a>
+          <a href="#" class="link">LinkedIn</a>
+          <a href="#" class="link">Twitter</a>
+          <a href="#" class="link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/AnaMdTech">AnaMdTech</a>.
+  </div>
+</body>
+
+</html>
